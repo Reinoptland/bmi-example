@@ -24,8 +24,8 @@ X use the return value, give some output
 
 ### Data / Storage / Input
 
-- process.argv
-- string
+X process.argv
+X string
 
 ### Processing
 
