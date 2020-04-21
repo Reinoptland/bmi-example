@@ -2,8 +2,9 @@
 
 ## Calculate the BMI
 
-- input: height, weight, process.argv
-- store the input
+X input: height, weight, process.argv
+X store the input
+
 - processing
   - calculate the BMI using a function
   - perform a calculation inside of function
