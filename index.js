@@ -3,7 +3,7 @@ function bmiCalculator() {
   const weight = parseInt(process.argv[3]);
 
   var BMI = calculateBMI(height, weight); // pass arguments
-  console.log(BMI);
+  //   console.log(BMI);
   //   console.log("HEIGHT:", height, "WEIGHT", weight);
 
   console.log(`
@@ -21,7 +21,7 @@ function bmiCalculator() {
 }
 
 function calculateBMI(heightInM, weightInKg) {
-  console.log("HEIGHT:", heightInM, "WEIGHT:", weightInKg);
+  //   console.log("HEIGHT:", heightInM, "WEIGHT:", weightInKg);
   // weight won't work, it is not in scope
   var BMI = weightInKg / (heightInM * heightInM);
 
