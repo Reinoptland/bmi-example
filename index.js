@@ -1,5 +1,23 @@
 function validateGender(userInputForGender) {
   console.log("Input", userInputForGender);
+  //   if (
+  //     userInputForGender === "m" ||
+  //     userInputForGender === "female" ||
+  //     userInputForGender === "f"
+  //   ) {
+  //     console.log("valid", userInputForGender);
+  //   } else {
+  //     console.log("Not valid", userInputForGender);
+  //     process.exit();
+  //   }
+  var VALID_INPUTS = ["m", "f", "male", "female"];
+
+  if (VALID_INPUTS.includes(userInputForGender)) {
+    console.log("valid", userInputForGender);
+  } else {
+    console.log("invalid", userInputForGender);
+    process.exit();
+  }
 }
 
 function bmiCalculator() {
@@ -9,7 +27,7 @@ function bmiCalculator() {
   const gender = process.argv[5];
 
   //   console.log("GENDER:", gender);
-  validateGender("m");
+  validateGender("f");
   // predictions
   // - undefined
   // - error, undefined function (or something)
