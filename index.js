@@ -1,6 +1,8 @@
 function bmiCalculator() {
   const height = parseFloat(process.argv[2]);
   const weight = parseInt(process.argv[3]);
+  const age = parseInt(process.argv[4]);
+  const gender = process.argv[5];
 
   var BMI = calculateBMI(height, weight); // pass arguments
   //   console.log(BMI);
