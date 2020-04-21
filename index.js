@@ -1,1 +1,5 @@
-console.log("hallo");
+function bmiCalculator() {
+  console.log("hallo");
+}
+
+bmiCalculator();
