@@ -7,8 +7,10 @@ function bmiCalculator() {
 }
 
 function calculateBMI(heightInM, weightInKg) {
-  // define parameters
   console.log("HEIGHT:", heightInM, "WEIGHT:", weightInKg);
+  // weight won't work, it is not in scope
+  var BMI = weightInKg / (heightInM * heightInM);
+  console.log(BMI);
 }
 
 bmiCalculator();
