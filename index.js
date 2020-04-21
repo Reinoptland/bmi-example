@@ -13,9 +13,11 @@ function validateGender(userInputForGender) {
   var VALID_INPUTS = ["m", "f", "male", "female"];
 
   if (VALID_INPUTS.includes(userInputForGender)) {
-    console.log("valid", userInputForGender);
   } else {
-    console.log("invalid", userInputForGender);
+    console.log(
+      "current option is not supported yet sorry: ",
+      userInputForGender
+    );
     process.exit();
   }
 }
@@ -27,7 +29,7 @@ function bmiCalculator() {
   const gender = process.argv[5];
 
   //   console.log("GENDER:", gender);
-  validateGender("f");
+  validateGender(gender);
   // predictions
   // - undefined
   // - error, undefined function (or something)
@@ -36,18 +38,18 @@ function bmiCalculator() {
   //   console.log(BMI);
   //   console.log("HEIGHT:", height, "WEIGHT", weight);
 
-  //   console.log(`
-  //   ************
-  //   HELLO THERE
-  //   ************
+  console.log(`
+    ************
+    HELLO THERE
+    ************
 
-  //   STATS
-  //   *****
-  //   Weight = ${weight} kg
-  //   Height = ${height} m
-  //   Your BMI = ${Math.round(BMI)}
+    STATS
+    *****
+    Weight = ${weight} kg
+    Height = ${height} m
+    Your BMI = ${Math.round(BMI)}
 
-  //   `);
+    `);
 }
 
 function calculateBMI(heightInM, weightInKg) {
